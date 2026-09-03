@@ -125,6 +125,7 @@ def heading_city(block: str) -> str:
 def audit() -> list[str]:
     errors: list[str] = []
     all_ids: list[str] = []
+    food_city_counts: dict[str, int] = {}
 
     for pattern in ["01-目的地库.md", "03-美食库.md", "04-行程模板库.md", "05-FAQ库.md", "07-文化讲解库.md"]:
         path = OUT / pattern
@@ -152,6 +153,9 @@ def audit() -> list[str]:
                 errors.append(f"{path}:{line} 核心体验少于 3 项")
             if pattern == "03-美食库.md" and len(items(field_value(block, "关键词"))) < 3:
                 errors.append(f"{path}:{line} 美食关键词少于 3 个")
+            if pattern == "03-美食库.md":
+                city = field_value(block, "城市")
+                food_city_counts[city] = food_city_counts.get(city, 0) + 1
             if pattern == "05-FAQ库.md":
                 answer_len = len(field_value(block, "答案").replace(" ", ""))
                 if not 80 <= answer_len <= 150:
@@ -182,6 +186,10 @@ def audit() -> list[str]:
                 errors.append(f"{path}:{line} 条目长度 {block_len} 不在 200-400")
             if "关键词：" not in block or "★" not in line:
                 errors.append(f"{path}:{line} 关键词或星级缺失")
+            city = field_value(block, "目的地")
+            expected_file_city = path.stem[len("02-景点库-"):]
+            if city != expected_file_city:
+                errors.append(f"{path}:{line} 目的地与文件名不一致：{city} != {expected_file_city}")
             stars = line.count("★")
             keyword_count = len(items(field_value(block, "关键词")))
             highlight_count = len(items(field_value(block, "核心看点")))
@@ -210,13 +218,17 @@ def audit() -> list[str]:
     entries = blocks(stay_path)
     if not RANGE_RULES["06-交通住宿库.md"][0] <= len(entries) <= RANGE_RULES["06-交通住宿库.md"][1]:
         errors.append(f"{stay_path} 条目数 {len(entries)} 不在 20-30")
+    transport_names: list[str] = []
+    stay_names: list[str] = []
     for block in entries:
         line = block.splitlines()[0]
         check_len_range(block, stay_path, 150, 400, errors)
         if block.startswith("### 【T") and "线路：" in block:
             fields = TRANSPORT_FIELDS
+            transport_names.append(heading_city(block))
         elif block.startswith("### 【T") and "城市：" in block:
             fields = STAY_FIELDS
+            stay_names.append(field_value(block, "城市"))
         else:
             errors.append(f"{stay_path}:{line} 交通住宿类型无法识别")
             continue
@@ -243,13 +255,21 @@ def audit() -> list[str]:
         },
         "美食库": {field_value(block, "城市") for block in blocks(OUT / "03-美食库.md")},
         "行程模板库": {heading_city(block) for block in blocks(OUT / "04-行程模板库.md")},
-        "交通住宿库": {heading_city(block) for block in blocks(stay_path)},
+        "交通库": set(transport_names),
+        "住宿库": set(stay_names),
         "文化讲解库": {heading_city(block) for block in blocks(OUT / "07-文化讲解库.md")},
     }
     for library, names in support_names.items():
         missing = destination_names - names
         if missing:
             errors.append(f"{library}缺少目的地：{sorted(missing)}")
+    for city, count in food_city_counts.items():
+        if not 3 <= count <= 5:
+            errors.append(f"美食库 {city} 条目数 {count} 不在 3-5")
+    itinerary_titles = [field_value(block, "模板名") for block in blocks(OUT / "04-行程模板库.md")]
+    for theme in ["古都", "海滨", "美食", "自然", "亲子"]:
+        if not any(theme in title for title in itinerary_titles):
+            errors.append(f"行程模板缺少主题：{theme}")
 
     sensitive = re.compile(r"(?i)(password|passwd|token|api[_-]?key|secret|身份证|银行卡|手机号[:：])")
     for path in OUT.glob("*.md"):
