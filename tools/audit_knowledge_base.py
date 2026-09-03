@@ -109,6 +109,13 @@ def check_hard_info(block: str, path: Path, line: int, fields: list[str], errors
         errors.append(f"{path}:{line} 服务硬信息不足，仅 {present} 项")
 
 
+def check_pending_fields(block: str, path: Path, line: int, fields: list[str], errors: list[str]) -> None:
+    for field in fields:
+        value = field_value(block, field)
+        if "待核实" not in value:
+            errors.append(f"{path}:{line} 时效字段缺少待核实标注：{field}")
+
+
 def field_value(block: str, name: str) -> str:
     match = re.search(rf"^{name}：(.*)$", block, re.M)
     return match.group(1).strip() if match else ""
@@ -156,6 +163,7 @@ def audit() -> list[str]:
             if pattern == "03-美食库.md":
                 city = field_value(block, "城市")
                 food_city_counts[city] = food_city_counts.get(city, 0) + 1
+                check_pending_fields(block, path, 0, ["人均", "营业时间", "排队情况"], errors)
             if pattern == "05-FAQ库.md":
                 answer_len = len(field_value(block, "答案").replace(" ", ""))
                 if not 80 <= answer_len <= 150:
@@ -200,6 +208,7 @@ def audit() -> list[str]:
                 errors.append(f"{path}:{line} 四星景点详细度不足（长度 {block_len}，关键词 {keyword_count}，核心看点 {highlight_count}）")
             season = field_value(block, "最佳季节")
             play_time = field_value(block, "建议游玩时间")
+            check_pending_fields(block, path, 0, ["门票与预约", "开放时间"], errors)
             if not re.search(r"(全年|\d+(?:-\d+)?\s*月|春夏|夏秋|秋冬|春秋|春季|夏季|秋季|冬季)", season):
                 errors.append(f"{path}:{line} 最佳季节不够具体：{season}")
             if not re.search(r"(全天|半日|一日|一至两日|\d+(?:-\d+)?\s*(分钟|小时|天|日))", play_time):
@@ -209,7 +218,7 @@ def audit() -> list[str]:
         all_ids.extend(check_ids(path, entries, errors))
     if not 250 <= total_attractions <= 400:
         errors.append(f"景点总条目 {total_attractions} 不在 250-400")
-    if total_attractions and star_count.get(5, 0) / total_attractions > 0.25:
+    if total_attractions and not 0.15 <= star_count.get(5, 0) / total_attractions <= 0.25:
         errors.append(f"五星占比 {star_count.get(5, 0) / total_attractions:.2%} 超过 25%")
     if len(name_city_pairs) != len(set(name_city_pairs)):
         errors.append("同一目的地存在重复景点名称")
@@ -226,6 +235,7 @@ def audit() -> list[str]:
         if block.startswith("### 【T") and "线路：" in block:
             fields = TRANSPORT_FIELDS
             transport_names.append(heading_city(block))
+            check_pending_fields(block, stay_path, 0, ["费用区间", "班次频率"], errors)
         elif block.startswith("### 【T") and "城市：" in block:
             fields = STAY_FIELDS
             stay_names.append(field_value(block, "城市"))
