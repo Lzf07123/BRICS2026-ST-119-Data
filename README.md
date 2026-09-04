@@ -26,6 +26,7 @@ tools/                   # 数据生成与全库审计脚本
 ## 常用命令
 
 ```bash
+python3 tools/preflight.py
 python3 tools/build_knowledge_base.py --validate-only
 python3 tools/audit_knowledge_base.py
 python3 tools/build_knowledge_base.py
@@ -37,6 +38,7 @@ python3 tools/build_knowledge_base.py
 2. 按顺序上传 41 份知识库数据文件；先运行 `python3 tools/build_upload_manifest.py` 生成 `上传文件清单.csv` 与 `上传文件SHA256SUMS.txt`，再用 `--check` 核对文件、条目数、字节数和哈希。所有清单、哈希和 QC 文件仅本地参考，不上传。
 3. 上传后按清单中的别名问法和跨字段问法验证检索。
 4. 修正问题时回到 `tools/kb_data.py` 或对应 Markdown 文件，改完后重新审计并提交。
+5. 比赛或上传前可运行 `python3 tools/preflight.py`，一次性执行清单、生成和全库审计三项检查。
 
 ## 质量底线
 
