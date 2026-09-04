@@ -164,6 +164,25 @@ def audit() -> list[str]:
                 city = field_value(block, "城市")
                 food_city_counts[city] = food_city_counts.get(city, 0) + 1
                 check_pending_fields(block, path, 0, ["人均", "营业时间", "排队情况"], errors)
+            if pattern == "04-行程模板库.md":
+                days_match = re.search(r"(\d+)", field_value(block, "天数"))
+                schedule = field_value(block, "逐时段安排")
+                day_items = [item.strip() for item in re.split(r"[；;]", schedule) if item.strip()]
+                day_anchor_counts = []
+                for item in day_items:
+                    core = re.sub(r"^D\d+\s*", "", item)
+                    anchors = [anchor.strip() for anchor in re.split(r"[-–—]", core) if anchor.strip()]
+                    day_anchor_counts.append(len(anchors))
+                if days_match and len(day_items) != int(days_match.group(1)):
+                    errors.append(f"{path}:{line} 日程段数 {len(day_items)} 与天数不一致")
+                if day_anchor_counts and min(day_anchor_counts) < 2:
+                    errors.append(f"{path}:{line} 存在少于 2 个真实锚点的日程日")
+                backup_count = len([item for item in re.split(r"[；;]", field_value(block, "备选方案")) if item.strip()])
+                if backup_count < 2:
+                    errors.append(f"{path}:{line} 备选方案少于 2 条")
+                budget = field_value(block, "预算估算")
+                if "已含" not in budget or "波动" not in budget:
+                    errors.append(f"{path}:{line} 预算估算缺少包含项或波动说明")
             if pattern == "05-FAQ库.md":
                 answer_len = len(field_value(block, "答案").replace(" ", ""))
                 if not 80 <= answer_len <= 150:
