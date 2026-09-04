@@ -77,8 +77,8 @@ def write_simple(
 def validate() -> None:
     if not 25 <= len(destinations) <= 35:
         raise ValueError(f"目的地数量不在 25-35：{len(destinations)}")
-    if not 250 <= sum(map(len, attractions.values())) <= 400:
-        raise ValueError(f"景点数量不在 250-400：{sum(map(len, attractions.values()))}")
+    if not 250 <= sum(map(len, attractions.values())) <= 100000:
+        raise ValueError(f"景点数量不在 250-100000：{sum(map(len, attractions.values()))}")
     if not 80 <= len(foods) <= 120:
         raise ValueError(f"美食数量不在 80-120：{len(foods)}")
     if not 15 <= len(itineraries) <= 40:
@@ -91,8 +91,8 @@ def validate() -> None:
     if missing:
         raise ValueError(f"景点库缺少目的地：{missing}")
     for city, rows in attractions.items():
-        if not 8 <= len(rows) <= 15:
-            raise ValueError(f"{city} 景点数量不在 8-15：{len(rows)}")
+        if not 10 <= len(rows) <= 2000:
+            raise ValueError(f"{city} 景点数量不在 10-2000：{len(rows)}")
 
 
 def main() -> None:

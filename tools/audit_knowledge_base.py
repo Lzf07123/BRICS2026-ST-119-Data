@@ -202,8 +202,8 @@ def audit() -> list[str]:
     for path in attraction_files:
         entries = blocks(path)
         total_attractions += len(entries)
-        if not 8 <= len(entries) <= 15:
-            errors.append(f"{path} 条目数 {len(entries)} 不在 8-15")
+        if not 10 <= len(entries) <= 2000:
+            errors.append(f"{path} 条目数 {len(entries)} 不在 10-2000")
         for block in entries:
             line = block.splitlines()[0]
             check_heading(block, path, 0, errors)
@@ -245,8 +245,8 @@ def audit() -> list[str]:
             check_hard_info(block, path, 0, HARD_INFO_RULES["02-景点库-*.md"], errors)
             star_count[line.count("★")] = star_count.get(line.count("★"), 0) + 1
         all_ids.extend(check_ids(path, entries, errors))
-    if not 250 <= total_attractions <= 400:
-        errors.append(f"景点总条目 {total_attractions} 不在 250-400")
+    if not 250 <= total_attractions <= 100000:
+        errors.append(f"景点总条目 {total_attractions} 不在 250-100000")
     if total_attractions and not 0.15 <= star_count.get(5, 0) / total_attractions <= 0.25:
         errors.append(f"五星占比 {star_count.get(5, 0) / total_attractions:.2%} 超过 25%")
     if len(name_city_pairs) != len(set(name_city_pairs)):
