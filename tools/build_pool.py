@@ -196,6 +196,65 @@ def source_rows() -> list[dict[str, str]]:
                 "note": "文化和旅游部公开名录接口抓取，N0 版本锁定源",
             }
         )
+    extra_rows = [
+        {
+            "source_code": "C",
+            "source_name": "全国重点文物保护单位名录查询",
+            "publisher": "国家政务服务平台",
+            "source_url": "http://app.gjzwfw.gov.cn/jmopen/webapp/html5/gjwwjqgzdwwbhdwmlcx/index.html",
+            "source_version": "2026-09-04",
+            "captured_at": "2026-09-04T16:20+08:00",
+            "captured_by": "Codex",
+            "sha256": "",
+            "archive_path": "数据来源/国家政务服务平台/col529_index.md",
+            "dedup_rule": "文保编号｜名称｜行政区",
+            "note": "国家政务服务平台国家文物局服务页，内含全国重点文物保护单位名录入口",
+        },
+        {
+            "source_code": "F",
+            "source_name": "全国博物馆名录",
+            "publisher": "国家政务服务平台",
+            "source_url": "http://app.gjzwfw.gov.cn/jmopen/webapp/html5/gjwwjqgbwgmlcxpc/index.html",
+            "source_version": "2026-09-04",
+            "captured_at": "2026-09-04T16:20+08:00",
+            "captured_by": "Codex",
+            "sha256": "",
+            "archive_path": "数据来源/国家政务服务平台/col529_index.md",
+            "dedup_rule": "备案编号｜名称｜行政区",
+            "note": "国家政务服务平台国家文物局服务页，内含全国博物馆名录入口",
+        },
+        {
+            "source_code": "G",
+            "source_name": "中国的世界文化遗产",
+            "publisher": "国家文物局",
+            "source_url": "http://www.ncha.gov.cn/col/col2790/index.html",
+            "source_version": "2026-09-04",
+            "captured_at": "2026-09-04T16:20+08:00",
+            "captured_by": "Codex",
+            "sha256": "",
+            "archive_path": "数据来源/国家文物局/col2790_world_heritage.md",
+            "dedup_rule": "UNESCO ID｜官方名称｜中国名称",
+            "note": "国家文物局中国的世界文化遗产页面",
+        },
+        {
+            "source_code": "D/E",
+            "source_name": "国务院关于3省国家级自然保护区和国家级风景名胜区整合优化方案的批复",
+            "publisher": "中国政府网",
+            "source_url": "https://www.gov.cn/zhengce/content/202606/content_7072483.htm",
+            "source_version": "国函〔2026〕53号/2026-06-17",
+            "captured_at": "2026-09-04T16:20+08:00",
+            "captured_by": "Codex",
+            "sha256": "",
+            "archive_path": "数据来源/中国政府网/2026-06-17_nature_reserve_scenic_area.md",
+            "dedup_rule": "官方名称｜行政区｜发文机关｜文号",
+            "note": "国务院批复，D/E 类官方公告原件；完整名录仍待接入",
+        },
+    ]
+    for row in extra_rows:
+        archive = ROOT / row["archive_path"]
+        if archive.is_file():
+            row["sha256"] = hashlib.sha256(archive.read_bytes()).hexdigest()
+    rows.extend(extra_rows)
     return rows
 
 
@@ -375,6 +434,30 @@ def validate_seed_mapping(mapping: list[dict[str, str]], rows: list[dict[str, st
             raise ValueError(f"待补映射的 pool_id 不在总池：{row['kb_id']}")
 
 
+def validate_sources(rows: list[dict[str, str]]) -> None:
+    if not rows:
+        raise ValueError("来源登记表为空")
+    allowed_codes = set("ABCDEFGHIJ")
+    for row in rows:
+        if not all(code in allowed_codes for code in row["source_code"].split("/")):
+            raise ValueError(f"来源类别非法：{row['source_code']}")
+        for field in ["source_name", "publisher", "source_url", "source_version", "captured_at", "captured_by", "sha256", "archive_path", "dedup_rule"]:
+            if not row[field]:
+                raise ValueError(f"{row['source_code']} 来源字段为空：{field}")
+        archive = ROOT / row["archive_path"]
+        if not archive.is_file():
+            raise ValueError(f"来源归档文件缺失：{row['archive_path']}")
+        digest = hashlib.sha256(archive.read_bytes()).hexdigest()
+        if digest != row["sha256"]:
+            raise ValueError(f"来源归档哈希不一致：{row['archive_path']}")
+    covered_codes = set()
+    for row in rows:
+        covered_codes.update(row["source_code"].split("/"))
+    missing = allowed_codes - covered_codes
+    if missing:
+        raise ValueError(f"来源类别缺失：{sorted(missing)}")
+
+
 def validate(rows: list[dict[str, str]]) -> None:
     if not rows:
         raise ValueError("总池为空")
@@ -399,6 +482,7 @@ def main() -> None:
     seed_mapping = read_seed_mapping()
     if seed_mapping:
         validate_seed_mapping(seed_mapping, rows)
+    validate_sources(source_rows())
     if args.validate_only:
         print("总池校验通过")
         return
