@@ -1,0 +1,103 @@
+A001|故宫博物院|故宫博物院|/tmp/content_4.json|97745|exact|high|5A 全称一致
+A002|八达岭长城|八达岭—慕田峪长城旅游区|/tmp/content_4.json|97748|component_of_official_5A|high|八达岭段属官方组合 5A 旅游区
+A003|天坛公园|天坛公园|/tmp/content_4.json|97746|exact|high|5A 全称一致
+A004|颐和园|颐和园|/tmp/content_4.json|97747|exact|high|5A 全称一致
+A005|圆明园遗址公园|圆明园遗址公园景区|/tmp/content_4.json|97752|normalized_suffix|high|KB 去除官方“景区”后缀
+A006|中国国家博物馆|中国国家博物馆|/tmp/content_40.json|15653|red_tourism_exact|high|红色旅游名录精确收录
+A007|天安门广场|天安门广场|/tmp/content_40.json|15649|red_tourism_exact|high|红色旅游名录精确收录
+A012|篁岭|上饶市篁岭景区|/tmp/content_4.json|97904|exact|high|官方含行政区前缀
+A016|江湾|上饶市婺源县江湾景区|/tmp/content_4.json|97894|exact|high|官方含行政区前缀
+A021|黄山风景区|黄山市黄山风景区|/tmp/content_4.json|97865|exact|high|5A 全称一致
+A026|宏村|黄山市皖南古村落－西递宏村|/tmp/content_4.json|97868|component_of_official_5A|high|宏村为官方组合 5A 组成
+A027|西递|黄山市皖南古村落－西递宏村|/tmp/content_4.json|97868|component_of_official_5A|high|西递为官方组合 5A 组成
+A046|清源山|泉州市清源山风景名胜区|/tmp/content_4.json|97883|exact|high|官方含行政区前缀
+A048|中山路|泉州中山路旅游休闲街区|/tmp/content_50.json|56936|official_street_alias_or_component|high|官方街区全称含“旅游休闲街区”
+A051|呼伦贝尔大草原|呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区|/tmp/content_4.json|97787|exact|high|官方名含大草原与莫尔格勒河组合
+A054|莫日格勒河|呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区|/tmp/content_4.json|97787|component_of_official_5A|high|官方写法为“莫尔格勒河”
+A057|阿尔山|兴安盟阿尔山-柴河旅游景区|/tmp/content_4.json|97784|exact|high|阿尔山属兴安盟，放呼伦贝尔库需标跨城
+A061|布达拉宫|拉萨市布达拉宫景区|/tmp/content_4.json|98049|exact|high|官方含行政区前缀
+A062|大昭寺|拉萨市大昭寺景区|/tmp/content_4.json|98050|exact|high|官方含行政区前缀
+A063|八廓街|八廓街|/tmp/content_60.json|58403|official_street_alias_or_component|high|第三批旅游休闲街区
+A071|青海湖|青海湖风景区|/tmp/content_4.json|98075|exact|high|5A 全称一致
+A073|塔尔寺|西宁市塔尔寺景区|/tmp/content_4.json|98076|exact|high|官方含行政区前缀
+A082|鸣沙山月牙泉|酒泉市鸣沙山月牙泉景区|/tmp/content_4.json|98070|exact|high|官方含行政区前缀
+A083|嘉峪关关城|嘉峪关市嘉峪关文物景区|/tmp/content_4.json|98067|component_of_official_5A|high|关城为嘉峪关文物景区组成
+A084|张掖七彩丹霞|张掖市七彩丹霞景区|/tmp/content_4.json|98071|exact|high|实际在张掖，放敦煌-嘉峪关库需标跨城
+A088|敦煌夜市|敦煌夜市文化旅游休闲街区|/tmp/content_61.json|98148|official_street_alias_or_component|high|第四批旅游休闲街区
+A089|悬壁长城|嘉峪关市嘉峪关文物景区|/tmp/content_4.json|98067|component_of_official_5A|high|悬壁长城为嘉峪关文物景区组成
+A091|那拉提草原|伊犁哈萨克自治州那拉提旅游风景区|/tmp/content_4.json|98088|exact|high|官方含行政区前缀
+A092|喀拉峻草原|伊犁哈萨克自治州喀拉峻景区|/tmp/content_4.json|98094|exact|high|官方含行政区前缀
+A093|赛里木湖|博尔塔拉蒙古自治州赛里木湖景区|/tmp/content_4.json|98098|exact|high|属博尔塔拉蒙古自治州，放伊犁/北疆库需标跨城
+A101|喀纳斯湖|阿勒泰地区喀纳斯景区|/tmp/content_4.json|98087|component_of_official_5A|high|喀纳斯湖属官方喀纳斯景区范围
+A103|天山天池|昌吉回族自治州天山天池风景名胜区|/tmp/content_4.json|98085|exact|high|官方含行政区前缀
+A104|乌鲁木齐国际大巴扎|大巴扎旅游休闲街区|/tmp/content_49.json|56910|official_street_alias_or_component|high|官方街区名“大巴扎旅游休闲街区”
+A105|可可托海|阿勒泰地区可可托海景区|/tmp/content_4.json|98089|exact|high|官方含行政区前缀
+A109|天山大峡谷|乌鲁木齐市天山大峡谷|/tmp/content_4.json|98091|exact|high|5A 全称一致
+A111|长白山天池|延边朝鲜族自治州长白山景区|/tmp/content_4.json|97796|component_of_official_5A|high|天池属官方长白山景区范围
+A118|长白山西坡|延边朝鲜族自治州长白山景区|/tmp/content_4.json|97796|component_of_official_5A|high|西坡属官方长白山景区范围
+A122|中央大街|中央大街步行街|/tmp/content_49.json|56868|official_street_alias_or_component|high|官方名“中央大街步行街”
+A124|太阳岛|哈尔滨市太阳岛景区|/tmp/content_4.json|97805|exact|high|官方含行政区前缀
+A131|龙门石窟|洛阳市龙门石窟景区|/tmp/content_4.json|97922|exact|high|官方含行政区前缀
+A139|白云山|洛阳市白云山景区|/tmp/content_4.json|97925|exact|high|官方含行政区前缀
+A140|龙潭大峡谷|洛阳市龙潭大峡谷景区|/tmp/content_4.json|97929|exact|high|官方含行政区前缀
+A141|张家界国家森林公园|张家界市武陵源－天门山旅游区|/tmp/content_4.json|97954|component_of_official_5A|high|森林公园属官方组合旅游区
+A142|天门山|张家界市武陵源－天门山旅游区|/tmp/content_4.json|97954|component_of_official_5A|high|天门山属官方组合旅游区
+A146|凤凰古城|湘西州凤凰古城旅游区|/tmp/content_4.json|97965|exact|high|属湘西州，放张家界库需标跨城
+A151|黄果树瀑布|安顺市黄果树瀑布景区|/tmp/content_4.json|98029|exact|high|属安顺市，放贵阳库需标跨城
+A152|青岩古镇|贵阳市花溪区青岩古镇景区|/tmp/content_4.json|98033|exact|high|官方含行政区前缀
+A155|青云路夜市|青云路步行街|/tmp/content_61.json|98144|official_street_alias_or_component|high|官方名“青云路步行街”
+A156|荔波小七孔|黔南布依族苗族自治州荔波县樟江景区|/tmp/content_4.json|98032|component_of_official_5A|high|小七孔为樟江景区组成，且属黔南州，需标跨城
+A157|龙宫|安顺市西秀区龙宫景区|/tmp/content_4.json|98030|exact|high|属安顺市，放贵阳库需标跨城
+A161|漓江|桂林市漓江风景区|/tmp/content_4.json|97982|exact|high|官方含行政区前缀
+A162|阳朔西街|阳朔西街|/tmp/content_50.json|56950|official_street_alias_or_component|high|第二批旅游休闲街区
+A165|象鼻山|桂林市两江四湖•象山景区|/tmp/content_4.json|97985|component_of_official_5A|high|象鼻山/象山属两江四湖组合 5A
+A166|两江四湖|桂林市两江四湖•象山景区|/tmp/content_4.json|97985|component_of_official_5A|high|属官方组合 5A
+A169|靖江王府|桂林市独秀峰•靖江王城景区|/tmp/content_4.json|97983|name_variant|high|官方主名“独秀峰·靖江王城景区”
+A172|中科院西双版纳热带植物园|西双版纳州中科院西双版纳热带植物园|/tmp/content_4.json|98043|exact|high|官方含行政区前缀
+A183|崇圣寺三塔|大理州崇圣寺三塔文化旅游区|/tmp/content_4.json|98042|exact|high|官方含行政区前缀
+A184|丽江古城|丽江市丽江古城景区|/tmp/content_4.json|98041|exact|high|官方含行政区前缀
+A185|玉龙雪山|丽江市玉龙雪山景区|/tmp/content_4.json|98040|exact|high|官方含行政区前缀
+A189|双廊古镇|双廊镇民族文化街|/tmp/content_50.json|56960|official_street_alias_or_component|high|官方街区为双廊镇民族文化街
+A192|石林|昆明市石林风景区|/tmp/content_4.json|98039|exact|high|官方含行政区前缀
+A202|蜈支洲岛|三亚市蜈支洲岛旅游区|/tmp/content_4.json|97997|exact|high|官方含行政区前缀
+A203|天涯海角|三亚市天涯海角游览区|/tmp/content_4.json|97998|exact|high|官方用“游览区”
+A204|南山文化旅游区|三亚市南山文化旅游区|/tmp/content_4.json|97992|exact|high|官方含行政区前缀
+A207|大小洞天|三亚市南山大小洞天旅游区|/tmp/content_4.json|97993|component_of_official_5A|high|属官方南山大小洞天旅游区
+A213|崂山|青岛市崂山景区|/tmp/content_4.json|97908|exact|high|官方含行政区前缀
+A221|黄鹤楼|武汉市黄鹤楼公园|/tmp/content_4.json|97938|exact|high|官方用“黄鹤楼公园”
+A223|东湖绿道|湖北省武汉市东湖景区|/tmp/content_4.json|97945|component_of_official_5A|high|绿道属官方东湖景区范围
+A227|昙华林|昙华林历史文化街区|/tmp/content_60.json|58387|official_street_alias_or_component|high|官方名“昙华林历史文化街区”
+A232|橘子洲|长沙市岳麓山-橘子洲旅游区|/tmp/content_4.json|97958|component_of_official_5A|high|属岳麓山-橘子洲组合 5A
+A233|岳麓山|长沙市岳麓山-橘子洲旅游区|/tmp/content_4.json|97958|component_of_official_5A|high|属岳麓山-橘子洲组合 5A
+A235|太平街|太平街|/tmp/content_49.json|56888|official_street_alias_or_component|high|第一批旅游休闲街区
+A256|长隆野生动物世界|广州市番禺区长隆旅游度假区|/tmp/content_4.json|97966|component_of_official_5A|high|野生动物世界属长隆旅游度假区
+A257|永庆坊|永庆坊|/tmp/content_49.json|56890|official_street_alias_or_component|high|第一批旅游休闲街区
+A258|白云山|广州市白云区白云山景区|/tmp/content_4.json|97968|exact|high|官方含行政区前缀
+A261|鼓浪屿|厦门市鼓浪屿风景名胜区|/tmp/content_4.json|97878|exact|high|官方含行政区前缀
+A271|中山陵|南京市钟山风景名胜区－中山陵园风景区|/tmp/content_4.json|97819|component_of_official_5A|high|中山陵园为钟山风景名胜区组成
+A272|明孝陵|南京市钟山风景名胜区－中山陵园风景区|/tmp/content_4.json|97819|component_of_official_5A|high|明孝陵属钟山风景名胜区范围
+A274|夫子庙与秦淮河|南京市夫子庙－秦淮风光带|/tmp/content_4.json|97823|component_of_official_5A|high|属官方夫子庙－秦淮风光带
+A281|拙政园|苏州市苏州园林（拙政园－留园－虎丘）|/tmp/content_4.json|97817|component_of_official_5A|high|拙政园属苏州园林组合 5A
+A282|留园|苏州市苏州园林（拙政园－留园－虎丘）|/tmp/content_4.json|97817|component_of_official_5A|high|留园属苏州园林组合 5A
+A283|平江路历史街区|平江历史街区|/tmp/content_49.json|56873|official_street_alias_or_component|high|官方名“平江历史街区”
+A285|虎丘|苏州市苏州园林（拙政园－留园－虎丘）|/tmp/content_4.json|97817|component_of_official_5A|high|虎丘属苏州园林组合 5A
+A287|周庄古镇|苏州市周庄古镇景区|/tmp/content_4.json|97818|exact|high|官方含行政区前缀
+A288|同里古镇|苏州市同里古镇景区|/tmp/content_4.json|97822|exact|high|官方含行政区前缀
+A290|金鸡湖|苏州市金鸡湖旅游区|/tmp/content_4.json|97828|exact|high|官方含行政区前缀
+A291|西湖|杭州市杭州西湖风景区|/tmp/content_4.json|97843|exact|high|官方含行政区前缀
+A295|西溪国家湿地公园|杭州市西溪湿地旅游区|/tmp/content_4.json|97851|exact|high|官方含行政区前缀
+A298|断桥与白堤|杭州市杭州西湖风景区|/tmp/content_4.json|97843|component_of_official_5A|high|断桥与白堤属西湖景区范围
+A299|河坊街|清河坊历史文化街区|/tmp/content_49.json|56874|official_street_alias_or_component|high|官方名“清河坊历史文化街区”
+A303|磁器口古镇|磁器口街区|/tmp/content_49.json|56896|official_street_alias_or_component|high|官方名“磁器口街区”
+A305|武隆天生三桥|喀斯特旅游区|/tmp/content_4.json|98001|component_of_official_5A|high|武隆天生三桥属重庆喀斯特旅游区
+A312|都江堰|成都市青城山－都江堰旅游景区|/tmp/content_4.json|98011|component_of_official_5A|high|都江堰属青城山－都江堰组合 5A
+A314|武侯祠|武侯祠·锦里|/tmp/content_49.json|56898|official_street_alias_or_component|high|武侯祠属官方“武侯祠·锦里”街区条目
+A315|锦里古街|武侯祠·锦里|/tmp/content_49.json|56898|official_street_alias_or_component|high|锦里属官方“武侯祠·锦里”街区条目
+A317|青城山|成都市青城山－都江堰旅游景区|/tmp/content_4.json|98011|component_of_official_5A|high|青城山属青城山－都江堰组合 5A
+A321|秦始皇兵马俑博物馆|西安市秦始皇帝陵博物院景区|/tmp/content_4.json|98054|exact|high|KB 旧名应改“秦始皇帝陵博物院”
+A324|西安城墙|西安市城墙•碑林历史文化景区|/tmp/content_4.json|98062|exact|high|官方含“城墙·碑林”组合
+A326|华清宫|西安市华清宫景区|/tmp/content_4.json|98055|exact|high|官方含行政区前缀
+A328|大明宫国家遗址公园|西安市大明宫旅游景区|/tmp/content_4.json|98064|exact|high|官方含行政区前缀
+A329|大唐芙蓉园|西安市大雁塔－大唐芙蓉园景区|/tmp/content_4.json|98057|exact|high|官方含行政区前缀
+A335|陆家嘴|浦东陆家嘴金融贸易区|/tmp/content_40.json|15736|red_tourism_component|high|红旅名录以“浦东陆家嘴金融贸易区”为条目
+A338|上海科技馆|上海科技馆|/tmp/content_4.json|97814|exact|high|5A 全称一致
