@@ -4548,9 +4548,21 @@ def _ensure_attraction_season(city: str, row: dict[str, str]) -> None:
     row["最佳季节"] = _destination_seasons.get(city, "全年适宜；极端天气前先确认开放状态")
 
 
+def _ensure_three_star_alternative(row: dict[str, str]) -> None:
+    if row["星级"] != "3":
+        return
+    haystack = f'{row["简介"]}{row["核心看点"]}{row["最佳时段与避峰"]}{row["周边联动"]}{row["注意事项"]}'
+    markers = ("顺路", "替代", "备选", "改")
+    if any(marker in haystack for marker in markers):
+        return
+    tail = "可作顺路或替代点，受限时改周边联动。"
+    row["注意事项"] = row["注意事项"].rstrip("。") + "。" + tail
+
+
 for _city, _rows in attractions.items():
     for _row in _rows:
         _ensure_attraction_season(_city, _row)
+        _ensure_three_star_alternative(_row)
 
 
 def food(name, city, category, keywords, signature, flavor, scene, nearby, tips):
