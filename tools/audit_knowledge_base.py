@@ -206,6 +206,16 @@ def audit() -> list[str]:
                 errors.append(f"{path}:{line} 五星景点详细度不足（长度 {block_len}，关键词 {keyword_count}，核心看点 {highlight_count}）")
             if stars == 4 and (block_len < 240 or keyword_count < 3 or highlight_count < 2):
                 errors.append(f"{path}:{line} 四星景点详细度不足（长度 {block_len}，关键词 {keyword_count}，核心看点 {highlight_count}）")
+            if stars == 3:
+                alternative_text = " ".join([
+                    field_value(block, "简介"),
+                    field_value(block, "核心看点"),
+                    field_value(block, "最佳时段与避峰"),
+                    field_value(block, "周边联动"),
+                    field_value(block, "注意事项"),
+                ])
+                if not any(marker in alternative_text for marker in ("顺路", "替代", "备选", "改")):
+                    errors.append(f"{path}:{line} 三星景点缺少顺路场景或替代方案")
             season = field_value(block, "最佳季节")
             play_time = field_value(block, "建议游玩时间")
             check_pending_fields(block, path, 0, ["门票与预约", "开放时间"], errors)
