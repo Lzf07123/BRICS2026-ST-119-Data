@@ -13,6 +13,7 @@ STEPS = [
     ("上传文件清单", [TOOLS / "build_upload_manifest.py", "--check"]),
     ("知识库生成校验", [TOOLS / "build_knowledge_base.py", "--validate-only"]),
     ("全库审计", [TOOLS / "audit_knowledge_base.py"]),
+    ("全国总池校验", [TOOLS / "build_pool.py", "--validate-only"]),
 ]
 
 
