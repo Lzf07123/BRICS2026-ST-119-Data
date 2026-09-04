@@ -81,7 +81,7 @@ def write_report(entries: list[dict[str, str]], rows: list[dict[str, str]]) -> N
         "# 景点字段具体率报告",
         "",
         "> 生成时间：2026-09-04  ",
-        "> 范围：`知识库数据/02-景点库-*.md` 340 条景点、每条两个时效字段。  ",
+        "> 范围：`知识库数据/02-景点库-*.md` 346 条景点、每条两个时效字段。  ",
         "> 本报告只用于本地复核和补库排期，不上传平台。",
         "",
         "## 快照",
@@ -112,7 +112,7 @@ def main() -> None:
     parser.add_argument("--csv-only", action="store_true")
     args = parser.parse_args()
     entries = load_entries()
-    if len(entries) != 680:
+    if len(entries) != 692:
         raise ValueError(f"时效字段总数应为 680，实际 {len(entries)}")
     rows = []
     for entry in entries:
