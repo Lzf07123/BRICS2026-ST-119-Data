@@ -111,6 +111,18 @@ SOURCE_FIELDS = [
     "note",
 ]
 
+SEED_MAPPING_FIELDS = [
+    "kb_id",
+    "kb_name",
+    "kb_city",
+    "official_name",
+    "pool_id",
+    "coverage_status",
+    "classification",
+    "confidence",
+    "reason",
+]
+
 
 def normalize_name(value: str) -> str:
     return re.sub(r"[\s（）()·、,，。.]", "", value or "").lower()
@@ -261,6 +273,108 @@ def write_csv(path: Path, fieldnames: list[str], rows: list[dict[str, str]]) -> 
         writer.writerows(rows)
 
 
+def build_seed_mapping(rows: list[dict[str, str]]) -> list[dict[str, str]]:
+    attractions = read_attractions()
+    manual_mapping = read_manual_mapping()
+    pool_by_name: dict[str, list[dict[str, str]]] = {}
+    for row in rows:
+        pool_by_name.setdefault(normalize_name(row["official_name"]), []).append(row)
+
+    mapping: list[dict[str, str]] = []
+    for kb_id, (name, city, _) in sorted(attractions.items()):
+        official_name = manual_mapping.get(kb_id, name)
+        matches = pool_by_name.get(normalize_name(official_name), [])
+        if len(matches) == 1:
+            match = matches[0]
+            classification = "covered_exact" if match["official_name"] == name else "covered_variant"
+            confidence = "high" if kb_id in manual_mapping else "medium"
+            reason = "官方名录名称一致" if classification == "covered_exact" else "官方名录名称变体或含行政区前缀"
+            mapping.append(
+                {
+                    "kb_id": kb_id,
+                    "kb_name": name,
+                    "kb_city": city,
+                    "official_name": match["official_name"],
+                    "pool_id": match["pool_id"],
+                    "coverage_status": "covered",
+                    "classification": classification,
+                    "confidence": confidence,
+                    "reason": reason,
+                }
+            )
+        else:
+            mapping.append(
+                {
+                    "kb_id": kb_id,
+                    "kb_name": name,
+                    "kb_city": city,
+                    "official_name": official_name,
+                    "pool_id": "",
+                    "coverage_status": "pending",
+                    "classification": "pending",
+                    "confidence": "low",
+                    "reason": "未完成官方名称、行政区或来源核对，不计入覆盖分子",
+                }
+            )
+    return mapping
+
+
+def read_seed_mapping() -> list[dict[str, str]]:
+    path = ROOT / "tools" / "seed_mapping_full.txt"
+    if not path.exists():
+        return []
+    mapping: list[dict[str, str]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("A") or "|" not in line:
+            continue
+        parts = line.split("|")
+        if len(parts) < 9:
+            continue
+        mapping.append(
+            {
+                "kb_id": parts[0],
+                "kb_name": parts[1],
+                "kb_city": parts[2],
+                "official_name": parts[3],
+                "pool_id": parts[4],
+                "coverage_status": parts[5],
+                "classification": parts[6],
+                "confidence": parts[7],
+                "reason": parts[8],
+            }
+        )
+    return mapping
+
+
+def validate_seed_mapping(mapping: list[dict[str, str]], rows: list[dict[str, str]]) -> None:
+    if len(mapping) != 340:
+        raise ValueError(f"种子池映射应为 340 条，实际 {len(mapping)}")
+    if len({row["kb_id"] for row in mapping}) != len(mapping):
+        raise ValueError("种子池映射 kb_id 重复")
+    allowed_status = {"covered", "pending"}
+    allowed_classification = {
+        "covered_exact",
+        "covered_variant",
+        "covered_component",
+        "pending",
+        "unmatched",
+        "nested",
+        "cross_city",
+        "experience",
+    }
+    pool_ids = {row["pool_id"] for row in rows}
+    for row in mapping:
+        if row["coverage_status"] not in allowed_status:
+            raise ValueError(f"非法覆盖状态：{row['kb_id']} {row['coverage_status']}")
+        if row["classification"] not in allowed_classification:
+            raise ValueError(f"非法分类：{row['kb_id']} {row['classification']}")
+        if row["coverage_status"] == "covered":
+            if not row["pool_id"] or row["pool_id"] not in pool_ids:
+                raise ValueError(f"覆盖映射缺少有效 pool_id：{row['kb_id']}")
+        elif row["pool_id"] and row["pool_id"] not in pool_ids:
+            raise ValueError(f"待补映射的 pool_id 不在总池：{row['kb_id']}")
+
+
 def validate(rows: list[dict[str, str]]) -> None:
     if not rows:
         raise ValueError("总池为空")
@@ -282,11 +396,15 @@ def main() -> None:
     args = parser.parse_args()
     rows = pool_rows()
     validate(rows)
+    seed_mapping = read_seed_mapping()
+    if seed_mapping:
+        validate_seed_mapping(seed_mapping, rows)
     if args.validate_only:
         print("总池校验通过")
         return
     write_csv(POOL_CSV, POOL_FIELDS, rows)
     write_csv(SOURCE_CSV, SOURCE_FIELDS, source_rows())
+    write_csv(ROOT / "tools" / "seed_pool_mapping.csv", SEED_MAPPING_FIELDS, seed_mapping)
     coverage = Counter(row["coverage_status"] for row in rows)
     provinces = Counter(row["province"] for row in rows)
     print(

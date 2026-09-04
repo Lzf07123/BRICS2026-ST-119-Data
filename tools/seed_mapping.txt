@@ -94,7 +94,7 @@ A312|都江堰|成都市青城山－都江堰旅游景区|/tmp/content_4.json|98
 A314|武侯祠|武侯祠·锦里|/tmp/content_49.json|56898|official_street_alias_or_component|high|武侯祠属官方“武侯祠·锦里”街区条目
 A315|锦里古街|武侯祠·锦里|/tmp/content_49.json|56898|official_street_alias_or_component|high|锦里属官方“武侯祠·锦里”街区条目
 A317|青城山|成都市青城山－都江堰旅游景区|/tmp/content_4.json|98011|component_of_official_5A|high|青城山属青城山－都江堰组合 5A
-A321|秦始皇兵马俑博物馆|西安市秦始皇帝陵博物院景区|/tmp/content_4.json|98054|exact|high|KB 旧名应改“秦始皇帝陵博物院”
+A321|秦始皇帝陵博物院|西安市秦始皇帝陵博物院景区|/tmp/content_4.json|98054|exact|high|KB 主名称已对齐官方全称
 A324|西安城墙|西安市城墙•碑林历史文化景区|/tmp/content_4.json|98062|exact|high|官方含“城墙·碑林”组合
 A326|华清宫|西安市华清宫景区|/tmp/content_4.json|98055|exact|high|官方含行政区前缀
 A328|大明宫国家遗址公园|西安市大明宫旅游景区|/tmp/content_4.json|98064|exact|high|官方含行政区前缀

@@ -1,0 +1,340 @@
+A001|故宫博物院|北京|故宫博物院|CN-P-000001|covered|covered_exact|high|MCT 5A名录全称一致
+A002|八达岭长城|北京|八达岭—慕田峪长城旅游区|CN-P-000004|covered|covered_component|high|官方为八达岭—慕田峪组合5A，KB为八达岭段
+A003|天坛公园|北京|天坛公园|CN-P-000002|covered|covered_exact|high|MCT 5A名录全称一致
+A004|颐和园|北京|颐和园|CN-P-000003|covered|covered_exact|high|MCT 5A名录全称一致
+A005|圆明园遗址公园|北京|圆明园遗址公园景区|CN-P-000008|covered|covered_variant|high|官方名多景区后缀，主体一致
+A006|中国国家博物馆|北京|中国国家博物馆|CN-P-000363|covered|covered_exact|high|红色旅游名录全称一致
+A007|天安门广场|北京|天安门广场|CN-P-000359|covered|covered_exact|high|红色旅游名录全称一致
+A008|什刹海与南锣鼓巷|北京|||pending|experience|medium|什刹海与南锣鼓巷为城市文化街区组合体验
+A009|北海公园|北京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A010|798艺术区|北京|北京市798艺术区|CN-P-002644|pending|covered_variant|high|工业旅游名录含北京市798艺术区
+A011|江岭|婺源|上饶市婺源县溪头乡西岸村江岭村|CN-P-001255|pending|pending|medium|来源为江岭村乡村旅游名录，需确认观景主体同名
+A012|篁岭|婺源|上饶市篁岭景区|CN-P-000160|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A013|思溪延村|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A014|李坑|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A015|汪口|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A016|江湾|婺源|上饶市婺源县江湾景区|CN-P-000150|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A017|彩虹桥|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A018|卧龙谷|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A019|晓起村|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A020|月亮湾|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A021|黄山风景区|黄山|黄山市黄山风景区|CN-P-000121|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A022|迎客松|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
+A023|光明顶|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
+A024|西海大峡谷|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
+A025|飞来石|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
+A026|宏村|黄山|黄山市皖南古村落－西递宏村|CN-P-000124|pending|covered_component|high|官方为西递宏村组合5A
+A027|西递|黄山|黄山市皖南古村落－西递宏村|CN-P-000124|pending|covered_component|high|官方为西递宏村组合5A
+A028|屯溪老街|黄山|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A029|新安江山水画廊|黄山|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A030|塔川|黄山|黄山市黟县宏村镇塔川村|CN-P-001208|pending|covered_variant|high|乡村旅游名录含宏村镇塔川村
+A031|环岛路|平潭|||pending|experience|medium|环岛路为滨海线路区域体验
+A032|北港村|平潭|平潭综合实验区流水镇北港村|CN-P-000779|pending|covered_variant|high|乡村旅游名录含平潭流水镇北港村
+A033|坛南湾|平潭|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A034|龙王头海滨浴场|平潭|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A035|海坛古城|平潭|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A036|长江澳|平潭|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A037|君山|平潭|福建省平潭综合实验区君山镇|CN-P-002096|pending|pending|medium|来源仅有君山镇地名，需确认山体景点主体
+A038|蓝眼泪观测点|平潭|||pending|experience|high|自然现象观测点，不宜按独立景区覆盖
+A039|将军山|平潭|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A040|石牌洋|平潭|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A041|开元寺|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A042|西街|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A043|府文庙|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A044|清净寺|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A045|天后宫|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A046|清源山|泉州|泉州市清源山风景名胜区|CN-P-000139|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A047|蟳埔村|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A048|中山路|泉州|泉州中山路旅游休闲街区|CN-P-002418|covered|covered_variant|high|官方街区全称含旅游休闲街区
+A049|泉州海外交通史博物馆|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A050|洛阳桥|泉州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A051|呼伦贝尔大草原|呼伦贝尔|呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区|CN-P-000043|pending|covered_component|high|官方为大草原与莫尔格勒河组合5A
+A052|额尔古纳湿地|呼伦贝尔|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A053|满洲里|呼伦贝尔|||pending|experience|medium|边境城市体验，名录中红色基地非同一主体
+A054|莫日格勒河|呼伦贝尔|呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区|CN-P-000043|pending|covered_component|high|官方为大草原与莫尔格勒河组合5A
+A055|根河|呼伦贝尔|||pending|experience|medium|森林小城与区域体验
+A056|室韦|呼伦贝尔|呼伦贝尔市额尔古纳市蒙兀室韦苏木室韦村|CN-P-000695|pending|covered_variant|high|乡村旅游名录含蒙兀室韦苏木室韦村
+A057|阿尔山|呼伦贝尔|兴安盟阿尔山-柴河旅游景区|CN-P-000040|covered|cross_city|high|来源确认景区属兴安盟，不在呼伦贝尔
+A058|敖鲁古雅使鹿部落|呼伦贝尔|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A059|套娃广场|呼伦贝尔|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A060|黑山头草原|呼伦贝尔|||pending|experience|medium|草原体验区域，无同名景区来源
+A061|布达拉宫|拉萨|拉萨市布达拉宫景区|CN-P-000305|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A062|大昭寺|拉萨|拉萨市大昭寺景区|CN-P-000306|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A063|八廓街|拉萨|八廓街|CN-P-002497|covered|covered_exact|high|第三批旅游休闲街区全称一致
+A064|罗布林卡|拉萨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A065|色拉寺|拉萨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A066|哲蚌寺|拉萨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A067|纳木错|拉萨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A068|羊卓雍措|拉萨|||pending|cross_city|high|主体在山南市浪卡子县，实际行政归属不在拉萨
+A069|宗角禄康公园|拉萨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A070|西藏博物馆|拉萨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A071|青海湖|西宁-青海湖|青海湖风景区|CN-P-000331|covered|covered_exact|high|MCT 5A名录全称一致
+A072|茶卡盐湖|西宁-青海湖|||pending|cross_city|high|茶卡盐湖属海西州乌兰县，不在西宁市
+A073|塔尔寺|西宁-青海湖|西宁市塔尔寺景区|CN-P-000332|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A074|日月山|西宁-青海湖|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A075|门源油菜花|西宁-青海湖|||pending|cross_city|high|门源油菜花属海北州门源县，不在西宁市
+A076|祁连山|西宁-青海湖|||pending|cross_city|high|祁连山主体跨海北州等行政区，不在西宁市域
+A077|黑马河|西宁-青海湖|||pending|cross_city|high|黑马河属海南州共和县，不在西宁市
+A078|西宁东关清真大寺|西宁-青海湖|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A079|卓尔山|西宁-青海湖|||pending|cross_city|high|卓尔山属海北州祁连县，不在西宁市
+A080|龙羊峡|西宁-青海湖|青海省龙羊峡工业旅游基地|CN-P-002637|pending|cross_city|high|工业旅游名录含龙羊峡；实际在海南州共和县
+A081|莫高窟|敦煌-嘉峪关|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A082|鸣沙山月牙泉|敦煌-嘉峪关|酒泉市鸣沙山月牙泉景区|CN-P-000326|covered|covered_exact|high|MCT 5A名录含酒泉市敦煌市归属
+A083|嘉峪关关城|敦煌-嘉峪关|嘉峪关市嘉峪关文物景区|CN-P-000323|pending|covered_component|high|关城属嘉峪关文物景区组合
+A084|张掖七彩丹霞|敦煌-嘉峪关|张掖市七彩丹霞景区|CN-P-000327|covered|cross_city|high|MCT 5A名录确认属张掖市，不在敦煌-嘉峪关目的地
+A085|阳关|敦煌-嘉峪关|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A086|玉门关|敦煌-嘉峪关|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A087|雅丹魔鬼城|敦煌-嘉峪关|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A088|敦煌夜市|敦煌-嘉峪关|敦煌夜市文化旅游休闲街区|CN-P-002542|covered|covered_variant|high|官方街区全称含文化旅游休闲街区
+A089|悬壁长城|敦煌-嘉峪关|嘉峪关市嘉峪关文物景区|CN-P-000323|pending|covered_component|high|悬壁长城属嘉峪关文物景区组合
+A090|榆林窟|敦煌-嘉峪关|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A091|那拉提草原|伊犁|伊犁哈萨克自治州那拉提旅游风景区|CN-P-000344|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A092|喀拉峻草原|伊犁|伊犁哈萨克自治州喀拉峻景区|CN-P-000350|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A093|赛里木湖|伊犁|博尔塔拉蒙古自治州赛里木湖景区|CN-P-000354|covered|cross_city|high|MCT 5A名录确认属博尔塔拉州，不在伊犁
+A094|果子沟大桥|伊犁|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A095|霍城薰衣草园|伊犁|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A096|伊宁市|伊犁|||pending|experience|high|城市文化体验，非独立景点
+A097|独库公路|伊犁|||pending|experience|medium|跨区域自驾公路体验，无同名景区来源
+A098|特克斯八卦城|伊犁|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A099|喀赞其民俗旅游区|伊犁|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A100|夏塔旅游区|伊犁|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A101|喀纳斯湖|北疆（乌鲁木齐-喀纳斯）|阿勒泰地区喀纳斯景区|CN-P-000343|covered|covered_component|high|喀纳斯湖属官方喀纳斯景区
+A102|禾木村|北疆（乌鲁木齐-喀纳斯）|阿勒泰地区布尔津县禾木喀纳斯蒙古族乡禾木村|CN-P-000965|pending|covered_variant|high|乡村旅游名录含禾木喀纳斯乡禾木村
+A103|天山天池|北疆（乌鲁木齐-喀纳斯）|昌吉回族自治州天山天池风景名胜区|CN-P-000341|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A104|乌鲁木齐国际大巴扎|北疆（乌鲁木齐-喀纳斯）|大巴扎旅游休闲街区|CN-P-002392|covered|covered_variant|high|官方街区为大巴扎旅游休闲街区
+A105|可可托海|北疆（乌鲁木齐-喀纳斯）|阿勒泰地区可可托海景区|CN-P-000345|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A106|白哈巴村|北疆（乌鲁木齐-喀纳斯）|新疆维吾尔自治区阿勒泰地区喀纳斯景区铁热克提乡白哈巴村|CN-P-001847|pending|covered_component|high|乡村旅游名录将其列入喀纳斯景区范围
+A107|五彩滩|北疆（乌鲁木齐-喀纳斯）|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A108|赛里木湖|北疆（乌鲁木齐-喀纳斯）|博尔塔拉蒙古自治州赛里木湖景区|CN-P-000354|covered|cross_city|high|同一赛里木湖属博尔塔拉州，不在北疆目的地区划内
+A109|天山大峡谷|北疆（乌鲁木齐-喀纳斯）|乌鲁木齐市天山大峡谷|CN-P-000347|covered|covered_exact|high|MCT 5A名录全称一致
+A110|可可苏里|北疆（乌鲁木齐-喀纳斯）|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A111|长白山天池|长白山|延边朝鲜族自治州长白山景区|CN-P-000052|pending|covered_component|high|天池属官方长白山景区
+A112|长白瀑布|长白山|延边朝鲜族自治州长白山景区|CN-P-000052|pending|covered_component|high|长白瀑布为北坡景区内部点
+A113|聚龙温泉|长白山|延边朝鲜族自治州长白山景区|CN-P-000052|pending|covered_component|high|聚龙温泉为北坡景区内部点
+A114|地下森林|长白山|延边朝鲜族自治州长白山景区|CN-P-000052|pending|covered_component|high|地下森林为北坡景区内部点
+A115|绿渊潭|长白山|延边朝鲜族自治州长白山景区|CN-P-000052|pending|covered_component|high|绿渊潭为北坡景区内部点
+A116|魔界|长白山|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A117|二道白河|长白山|||pending|experience|medium|旅游小镇与门户体验，非独立景区
+A118|长白山西坡|长白山|延边朝鲜族自治州长白山景区|CN-P-000052|pending|covered_component|high|西坡属官方长白山景区
+A119|长白山自然博物馆|长白山|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A120|松江河国家森林公园|长白山|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A121|哈尔滨冰雪大世界|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A122|中央大街|哈尔滨|中央大街步行街|CN-P-002350|covered|covered_variant|high|官方街区名含步行街
+A123|圣索菲亚教堂|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A124|太阳岛|哈尔滨|哈尔滨市太阳岛景区|CN-P-000061|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A125|松花江|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A126|亚布力滑雪场|哈尔滨|黑龙江亚布力滑雪旅游度假地|CN-P-002552|pending|covered_variant|high|国家级滑雪旅游度假地同名亚布力
+A127|东北虎林园|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A128|伏尔加庄园|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A129|哈尔滨大剧院|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A130|群力外滩湿地公园|哈尔滨|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A131|龙门石窟|洛阳|洛阳市龙门石窟景区|CN-P-000178|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A132|白马寺|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A133|洛阳博物馆|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A134|洛阳老城十字街|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A135|隋唐洛阳城国家遗址公园|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A136|王城公园|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A137|关林|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A138|洛邑古城|洛阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A139|白云山|洛阳|洛阳市白云山景区|CN-P-000181|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A140|龙潭大峡谷|洛阳|洛阳市龙潭大峡谷景区|CN-P-000185|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A141|张家界国家森林公园|张家界|张家界市武陵源－天门山旅游区|CN-P-000210|pending|covered_component|high|森林公园属官方武陵源—天门山组合旅游区
+A142|天门山|张家界|张家界市武陵源－天门山旅游区|CN-P-000210|pending|covered_component|high|天门山属官方武陵源—天门山组合旅游区
+A143|大峡谷玻璃桥|张家界|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A144|黄龙洞|张家界|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A145|金鞭溪|张家界|张家界市武陵源－天门山旅游区|CN-P-000210|pending|covered_component|high|金鞭溪为森林公园内部徒步线
+A146|凤凰古城|张家界|湘西州凤凰古城旅游区|CN-P-000221|covered|cross_city|high|MCT 5A名录确认属湘西州，不在张家界市
+A147|宝峰湖|张家界|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A148|芙蓉镇|张家界|||pending|cross_city|high|芙蓉镇属湘西州永顺县，不在张家界市
+A149|黄石寨|张家界|张家界市武陵源－天门山旅游区|CN-P-000210|pending|covered_component|high|黄石寨为森林公园内部观景点
+A150|十里画廊|张家界|张家界市武陵源－天门山旅游区|CN-P-000210|pending|covered_component|high|十里画廊为武陵源内部步道
+A151|黄果树瀑布|贵阳|安顺市黄果树瀑布景区|CN-P-000285|covered|cross_city|high|MCT 5A名录确认属安顺市，不在贵阳市
+A152|青岩古镇|贵阳|贵阳市花溪区青岩古镇景区|CN-P-000289|covered|covered_exact|high|MCT 5A名录含贵阳市花溪区前缀
+A153|黔灵山公园|贵阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A154|甲秀楼|贵阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A155|青云路夜市|贵阳|青云路步行街|CN-P-002538|covered|covered_variant|high|官方街区名青云路步行街
+A156|荔波小七孔|贵阳|黔南布依族苗族自治州荔波县樟江景区|CN-P-000288|covered|cross_city|high|小七孔属樟江景区组成，实际在黔南州荔波县
+A157|龙宫|贵阳|安顺市西秀区龙宫景区|CN-P-000286|covered|cross_city|high|MCT 5A名录确认属安顺市，不在贵阳市
+A158|西江千户苗寨|贵阳|||pending|cross_city|high|西江千户苗寨属黔东南州雷山县，不在贵阳市
+A159|花溪公园|贵阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A160|天河潭|贵阳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A161|漓江|桂林|桂林市漓江风景区|CN-P-000238|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A162|阳朔西街|桂林|阳朔西街|CN-P-002432|covered|covered_exact|high|第二批旅游休闲街区全称一致
+A163|遇龙河|桂林|桂林阳朔遇龙河旅游度假区|CN-P-002286|pending|covered_variant|high|国家级旅游度假区覆盖遇龙河区域
+A164|龙脊梯田|桂林|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A165|象鼻山|桂林|桂林市两江四湖•象山景区|CN-P-000241|pending|covered_component|high|象山为两江四湖·象山组合5A组成
+A166|两江四湖|桂林|桂林市两江四湖•象山景区|CN-P-000241|pending|covered_component|high|两江四湖为组合5A组成
+A167|十里画廊|桂林|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A168|兴坪古镇|桂林|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A169|靖江王府|桂林|桂林市独秀峰•靖江王城景区|CN-P-000239|covered|covered_variant|high|官方主名为独秀峰·靖江王城景区
+A170|尧山景区|桂林|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A171|告庄西双景|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A172|中科院西双版纳热带植物园|西双版纳|西双版纳州中科院西双版纳热带植物园|CN-P-000299|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A173|野象谷|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A174|傣族园|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A175|原始森林公园|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A176|曼听公园|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A177|勐泐大佛寺|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A178|澜沧江夜游|西双版纳|||pending|experience|medium|夜游与城市夜景体验
+A179|望天树景区|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A180|勐远仙境|西双版纳|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A181|洱海|大理-丽江|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A182|大理古城|大理-丽江|大理古城旅游度假区|CN-P-002298|pending|covered_variant|high|国家级旅游度假区覆盖大理古城区域
+A183|崇圣寺三塔|大理-丽江|大理州崇圣寺三塔文化旅游区|CN-P-000298|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A184|丽江古城|大理-丽江|丽江市丽江古城景区|CN-P-000297|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A185|玉龙雪山|大理-丽江|丽江市玉龙雪山景区|CN-P-000296|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A186|束河古镇|大理-丽江|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A187|白沙古镇|大理-丽江|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A188|苍山|大理-丽江|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A189|双廊古镇|大理-丽江|双廊镇民族文化街|CN-P-002442|covered|covered_variant|high|官方街区为双廊镇民族文化街
+A190|蓝月谷|大理-丽江|丽江市玉龙雪山景区|CN-P-000296|covered|covered_component|high|蓝月谷属玉龙雪山景区范围
+A191|滇池|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A192|石林|昆明|昆明市石林风景区|CN-P-000295|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A193|翠湖与云南大学|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A194|云南民族村|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A195|西山|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A196|昆明老街|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A197|九乡溶洞|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A198|金马碧鸡坊|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A199|大观楼|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A200|斗南花市|昆明|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A201|亚龙湾|三亚|三亚市亚龙湾旅游度假区|CN-P-002287|pending|covered_variant|high|国家级旅游度假区覆盖亚龙湾区域
+A202|蜈支洲岛|三亚|三亚市蜈支洲岛旅游区|CN-P-000253|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A203|天涯海角|三亚|三亚市天涯海角游览区|CN-P-000254|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A204|南山文化旅游区|三亚|三亚市南山文化旅游区|CN-P-000248|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A205|亚龙湾热带天堂森林公园|三亚|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A206|三亚湾|三亚|||pending|experience|medium|三亚湾为城市滨海区域体验
+A207|大小洞天|三亚|三亚市南山大小洞天旅游区|CN-P-000249|covered|covered_component|high|大小洞天属官方南山大小洞天旅游区
+A208|海棠湾|三亚|||pending|experience|medium|海棠湾为度假区区域体验
+A209|大东海旅游区|三亚|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A210|三亚千古情景区|三亚|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A211|栈桥|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A212|八大关|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A213|崂山|青岛|青岛市崂山景区|CN-P-000164|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A214|青岛啤酒博物馆|青岛|山东省青岛啤酒博物馆|CN-P-002614|pending|covered_variant|high|工业旅游名录含山东省青岛啤酒博物馆
+A215|劈柴院|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A216|小青岛|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A217|第二海水浴场|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A218|五四广场|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A219|青岛天主教堂|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A220|青岛海底世界|青岛|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A221|黄鹤楼|武汉|武汉市黄鹤楼公园|CN-P-000194|covered|covered_exact|high|MCT 5A名录官方用黄鹤楼公园
+A222|湖北省博物馆|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A223|东湖绿道|武汉|湖北省武汉市东湖景区|CN-P-000201|covered|covered_component|high|东湖绿道属官方东湖景区范围
+A224|武汉大学|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A225|长江大桥|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A226|户部巷|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A227|昙华林|武汉|昙华林历史文化街区|CN-P-002481|covered|covered_exact|high|第三批旅游休闲街区全称一致
+A228|楚河汉街|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A229|汉口江滩|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A230|归元禅寺|武汉|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A231|湖南博物院|长沙|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A232|橘子洲|长沙|长沙市岳麓山-橘子洲旅游区|CN-P-000214|pending|covered_component|high|橘子洲属岳麓山—橘子洲组合5A
+A233|岳麓山|长沙|长沙市岳麓山-橘子洲旅游区|CN-P-000214|pending|covered_component|high|岳麓山属岳麓山—橘子洲组合5A
+A234|岳麓书院|长沙|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A235|太平街|长沙|太平街|CN-P-002370|covered|covered_exact|high|第一批旅游休闲街区全称一致
+A236|坡子街|长沙|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A237|IFS 国金中心|长沙|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A238|梅溪湖|长沙|||pending|experience|medium|现代城区景观与区域体验
+A239|天心阁|长沙|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A240|靖港古镇|长沙|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A241|潮州古城|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A242|广济桥|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A243|开元寺|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A244|汕头小公园|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A245|南澳岛|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A246|韩文公祠|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A247|石炮台公园|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A248|潮汕工夫茶体验|潮汕|||pending|experience|high|文化体验，不宜按独立景区覆盖
+A249|礐石风景区|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A250|陈慈黉故居|潮汕|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A251|广州塔|广州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A252|陈家祠|广州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A253|沙面|广州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A254|上下九步行街|广州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A255|珠江新城|广州|||pending|experience|medium|现代都市片区体验
+A256|长隆野生动物世界|广州|广州市番禺区长隆旅游度假区|CN-P-000222|covered|covered_component|high|野生动物世界属长隆旅游度假区
+A257|永庆坊|广州|永庆坊|CN-P-002372|covered|covered_exact|high|第一批旅游休闲街区全称一致
+A258|白云山|广州|广州市白云区白云山景区|CN-P-000224|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A259|北京路步行街|广州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A260|越秀公园|广州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A261|鼓浪屿|厦门|厦门市鼓浪屿风景名胜区|CN-P-000134|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A262|环岛路|厦门|||pending|experience|medium|滨海公路线路体验
+A263|曾厝垵|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A264|厦门大学|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A265|沙坡尾|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A266|南普陀寺|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A267|胡里山炮台|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A268|五缘湾湿地公园|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A269|中山路步行街|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A270|演武大桥观景平台|厦门|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A271|中山陵|南京|南京市钟山风景名胜区－中山陵园风景区|CN-P-000075|pending|covered_component|high|中山陵园属钟山风景名胜区组合
+A272|明孝陵|南京|南京市钟山风景名胜区－中山陵园风景区|CN-P-000075|pending|covered_component|high|明孝陵属钟山风景名胜区范围
+A273|南京博物院|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A274|夫子庙与秦淮河|南京|南京市夫子庙－秦淮风光带|CN-P-000079|covered|covered_component|high|夫子庙与秦淮河属官方风光带组合
+A275|明城墙|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A276|玄武湖公园|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A277|先锋书店五台山店|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A278|老门东|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A279|鸡鸣寺|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A280|南京眼步行桥|南京|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A281|拙政园|苏州|苏州市苏州园林（拙政园－留园－虎丘）|CN-P-000073|pending|covered_component|high|拙政园属苏州园林组合5A
+A282|留园|苏州|苏州市苏州园林（拙政园－留园－虎丘）|CN-P-000073|pending|covered_component|high|留园属苏州园林组合5A
+A283|平江路历史街区|苏州|平江历史街区|CN-P-002355|covered|covered_variant|high|官方街区名为平江历史街区
+A284|山塘街|苏州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A285|虎丘|苏州|苏州市苏州园林（拙政园－留园－虎丘）|CN-P-000073|pending|covered_component|high|虎丘属苏州园林组合5A
+A286|苏州博物馆|苏州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A287|周庄古镇|苏州|苏州市周庄古镇景区|CN-P-000074|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A288|同里古镇|苏州|苏州市同里古镇景区|CN-P-000078|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A289|网师园|苏州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A290|金鸡湖|苏州|苏州市金鸡湖旅游区|CN-P-000084|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A291|西湖|杭州|杭州市杭州西湖风景区|CN-P-000099|pending|covered_exact|high|MCT 5A名录含行政区前缀
+A292|灵隐寺与飞来峰|杭州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A293|龙井村与梅家坞|杭州|||pending|experience|medium|茶文化村落与采茶品茶体验
+A294|京杭大运河杭州段|杭州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A295|西溪国家湿地公园|杭州|杭州市西溪湿地旅游区|CN-P-000107|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A296|胡雪岩故居|杭州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A297|钱塘江与钱江新城|杭州|||pending|experience|medium|城市天际线与夜景区域体验
+A298|断桥与白堤|杭州|杭州市杭州西湖风景区|CN-P-000099|pending|covered_component|high|断桥与白堤属西湖景区范围
+A299|河坊街|杭州|清河坊历史文化街区|CN-P-002356|covered|covered_variant|high|官方街区名为清河坊历史文化街区
+A300|九溪十八涧|杭州|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A301|洪崖洞|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A302|解放碑|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A303|磁器口古镇|重庆|磁器口街区|CN-P-002378|covered|covered_variant|high|官方街区名为磁器口街区
+A304|长江索道|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A305|武隆天生三桥|重庆|喀斯特旅游区|CN-P-000257|covered|covered_component|high|天生三桥属重庆喀斯特旅游区
+A306|白公馆|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A307|南山一棵树观景台|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A308|黄桷坪涂鸦一条街|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A309|重庆中国三峡博物馆|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A310|南滨路|重庆|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A311|成都大熊猫繁育研究基地|成都|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A312|都江堰|成都|成都市青城山－都江堰旅游景区|CN-P-000267|pending|covered_component|high|都江堰属青城山—都江堰组合5A
+A313|宽窄巷子|成都|宽窄巷子|CN-P-002382|covered|covered_exact|high|第一批旅游休闲街区全称一致
+A314|武侯祠|成都|武侯祠·锦里|CN-P-002380|pending|covered_component|high|武侯祠属官方武侯祠·锦里街区条目
+A315|锦里古街|成都|武侯祠·锦里|CN-P-002380|pending|covered_component|high|锦里属官方武侯祠·锦里街区条目
+A316|杜甫草堂|成都|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A317|青城山|成都|成都市青城山－都江堰旅游景区|CN-P-000267|pending|covered_component|high|青城山属青城山—都江堰组合5A
+A318|人民公园|成都|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A319|金沙遗址博物馆|成都|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A320|东郊记忆|成都|四川省成都市东郊记忆景区(国家工业遗产旅游基地)|CN-P-002589|pending|covered_variant|high|工业旅游名录含成都东郊记忆景区
+A321|秦始皇帝陵博物院|西安|西安市秦始皇帝陵博物院景区|CN-P-000310|covered|covered_exact|high|MCT 5A名录含景区后缀，主体一致
+A322|大雁塔与大唐不夜城|西安|西安市大雁塔－大唐芙蓉园景区|CN-P-000313|covered|covered_component|high|大雁塔属大雁塔—大唐芙蓉园组合景区
+A323|陕西历史博物馆|西安|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A324|西安城墙|西安|西安市城墙•碑林历史文化景区|CN-P-000318|covered|covered_component|high|城墙属官方城墙·碑林组合景区
+A325|回民街|西安|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A326|华清宫|西安|西安市华清宫景区|CN-P-000311|covered|covered_exact|high|MCT 5A名录含行政区前缀
+A327|钟鼓楼|西安|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A328|大明宫国家遗址公园|西安|西安市大明宫旅游景区|CN-P-000320|covered|covered_exact|high|MCT 5A名录官方用大明宫旅游景区
+A329|大唐芙蓉园|西安|西安市大雁塔－大唐芙蓉园景区|CN-P-000313|covered|covered_component|high|大唐芙蓉园属大雁塔—大唐芙蓉园组合景区
+A330|小雁塔|西安|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A331|外滩|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A332|上海迪士尼乐园|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A333|豫园与城隍庙|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A334|上海博物馆|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A335|陆家嘴|上海|浦东陆家嘴金融贸易区|CN-P-000446|covered|covered_variant|high|红色旅游名录以陆家嘴金融贸易区为条目
+A336|多伦路文化名人街|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A337|朱家角古镇|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A338|上海科技馆|上海|上海科技馆|CN-P-000070|covered|covered_exact|high|MCT 5A名录全称一致
+A339|田子坊|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A340|上海自然博物馆|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
