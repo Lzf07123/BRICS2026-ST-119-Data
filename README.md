@@ -34,6 +34,7 @@ python3 tools/audit_knowledge_base.py
 python3 tools/build_knowledge_base.py
 python3 tools/build_pool.py
 python3 tools/pool_report.py
+python3 tools/field_specificity.py
 ```
 
 ## 上传前流程
