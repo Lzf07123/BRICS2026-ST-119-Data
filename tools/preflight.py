@@ -14,6 +14,7 @@ STEPS = [
     ("知识库生成校验", [TOOLS / "build_knowledge_base.py", "--validate-only"]),
     ("全库审计", [TOOLS / "audit_knowledge_base.py"]),
     ("全国总池校验", [TOOLS / "build_pool.py", "--validate-only"]),
+    ("运营状态表校验", [TOOLS / "build_operational_status.py", "--check"]),
 ]
 
 
