@@ -419,10 +419,13 @@ def read_seed_mapping() -> list[dict[str, str]]:
 
 
 def validate_seed_mapping(mapping: list[dict[str, str]], rows: list[dict[str, str]]) -> None:
-    if len(mapping) != 340:
-        raise ValueError(f"种子池映射应为 340 条，实际 {len(mapping)}")
+    attractions = read_attractions()
+    if len(mapping) != len(attractions):
+        raise ValueError(f"种子池映射应为 {len(attractions)} 条，实际 {len(mapping)}")
     if len({row["kb_id"] for row in mapping}) != len(mapping):
         raise ValueError("种子池映射 kb_id 重复")
+    if {row["kb_id"] for row in mapping} != set(attractions):
+        raise ValueError("种子池映射 kb_id 与知识库景点卡不一致")
     allowed_status = {"covered", "pending"}
     allowed_classification = {
         "covered_exact",

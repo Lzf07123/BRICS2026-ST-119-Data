@@ -98,7 +98,7 @@ def write_report(rows: list[dict[str, str]]) -> None:
         "# 种子池运营状态核对报告",
         "",
         "> 生成时间：2026-09-04  ",
-        "> 范围：340 条种子池景点。  ",
+        "> 范围：346 条种子池景点。",
         "> 本报告只用于本地复核，不上传平台。",
         "",
         "## 状态快照",
@@ -122,8 +122,8 @@ def write_report(rows: list[dict[str, str]]) -> None:
 
 
 def validate(rows: list[dict[str, str]]) -> None:
-    if len(rows) != 340:
-        raise ValueError(f"运营状态表应为 340 行，实际 {len(rows)}")
+    if len(rows) != 346:
+        raise ValueError(f"运营状态表应为 346 行，实际 {len(rows)}")
     if len({row["kb_id"] for row in rows}) != len(rows):
         raise ValueError("运营状态表 kb_id 重复")
     for row in rows:
@@ -138,8 +138,8 @@ def main() -> None:
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
     seed = load_seed()
-    if len(seed) != 340:
-        raise ValueError(f"种子池映射应为 340 行，实际 {len(seed)}")
+    if len(seed) != 346:
+        raise ValueError(f"种子池映射应为 346 行，实际 {len(seed)}")
     if args.check:
         if not STATUS_CSV.exists():
             raise FileNotFoundError("种子池运营状态登记表缺失")

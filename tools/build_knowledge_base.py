@@ -12,44 +12,27 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "知识库数据"
 
 
-def star(text: str) -> str:
-    return {"5": "★★★★★", "4": "★★★★", "3": "★★★", "2": "★★", "1": "★"}.get(text, text)
+ATTRACTION_FIELDS = [
+    "关键词", "名称", "目的地", "类型", "星级", "简介", "核心看点",
+    "建议游玩时间", "门票与预约", "开放时间", "最佳季节", "交通指引",
+    "最佳时段与避峰", "适合人群", "周边联动", "注意事项",
+]
 
 
-def attraction_block(seq: int, city: str, row: dict[str, str]) -> str:
-    aid = f"A{seq:03d}"
-    name = row["名称"]
-    stars = star(row["星级"])
-    lines = [
-        f"### 【{aid}】{name}｜{city}｜{stars}",
-        f"关键词：{row['关键词']}",
-        f"名称：{name}",
-        f"目的地：{city}",
-        f"类型：{row['类型']}",
-        f"星级：{stars}",
-        f"简介：{row['简介']}",
-        f"核心看点：{row['核心看点']}",
-        f"建议游玩时间：{row['建议游玩时间']}",
-        "门票与预约：以官方渠道为准（待核实）",
-        "开放时间：以官方渠道为准（待核实）",
-        f"最佳季节：{row['最佳季节']}",
-        f"交通指引：{row['交通指引']}",
-        f"最佳时段与避峰：{row['最佳时段与避峰']}",
-        f"适合人群：{row['适合人群']}",
-        f"周边联动：{row['周边联动']}",
-        f"注意事项：{row['注意事项']}",
-    ]
+def attraction_block(row: dict[str, str]) -> str:
+    lines = [f"### 【{row['id']}】{row['heading_name']}｜{row['heading_city']}｜{row['heading_star']}"]
+    lines.extend(f"{field}：{row[field]}" for field in ATTRACTION_FIELDS)
     return "\n".join(lines)
 
 
 def write_attractions() -> None:
-    seq = 1
     for city, rows in attractions.items():
         path = OUT / f"02-景点库-{city}.md"
         lines = [f"# {city}景点库", ""]
         for row in rows:
-            lines.extend([attraction_block(seq, city, row), ""])
-            seq += 1
+            if row["heading_city"] != city:
+                raise ValueError(f"景点目的地与文件不一致：{row['id']} {row['heading_city']} != {city}")
+            lines.extend([attraction_block(row), ""])
         path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
 
@@ -90,6 +73,9 @@ def validate() -> None:
     missing = destination_names - attractions.keys()
     if missing:
         raise ValueError(f"景点库缺少目的地：{missing}")
+    attraction_ids = [row["id"] for rows in attractions.values() for row in rows]
+    if len(attraction_ids) != len(set(attraction_ids)):
+        raise ValueError("景点ID重复")
     for city, rows in attractions.items():
         if not 10 <= len(rows) <= 2000:
             raise ValueError(f"{city} 景点数量不在 10-2000：{len(rows)}")

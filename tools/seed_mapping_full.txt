@@ -19,10 +19,6 @@ A018|卧龙谷|婺源|||pending|unmatched|low|当前文旅部名录无同名或�
 A019|晓起村|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
 A020|月亮湾|婺源|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
 A021|黄山风景区|黄山|黄山市黄山风景区|CN-P-000121|covered|covered_exact|high|MCT 5A名录含行政区前缀
-A022|迎客松|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
-A023|光明顶|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
-A024|西海大峡谷|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
-A025|飞来石|黄山|黄山市黄山风景区|CN-P-000121|pending|covered_component|high|黄山风景区内部点，父卡核心看点已列
 A026|宏村|黄山|黄山市皖南古村落－西递宏村|CN-P-000124|pending|covered_component|high|官方为西递宏村组合5A
 A027|西递|黄山|黄山市皖南古村落－西递宏村|CN-P-000124|pending|covered_component|high|官方为西递宏村组合5A
 A028|屯溪老街|黄山|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
@@ -51,7 +47,6 @@ A050|洛阳桥|泉州|||pending|unmatched|low|当前文旅部名录无同名或�
 A051|呼伦贝尔大草原|呼伦贝尔|呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区|CN-P-000043|pending|covered_component|high|官方为大草原与莫尔格勒河组合5A
 A052|额尔古纳湿地|呼伦贝尔|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
 A053|满洲里|呼伦贝尔|||pending|experience|medium|边境城市体验，名录中红色基地非同一主体
-A054|莫日格勒河|呼伦贝尔|呼伦贝尔市呼伦贝尔大草原·莫尔格勒河景区|CN-P-000043|pending|covered_component|high|官方为大草原与莫尔格勒河组合5A
 A055|根河|呼伦贝尔|||pending|experience|medium|森林小城与区域体验
 A056|室韦|呼伦贝尔|呼伦贝尔市额尔古纳市蒙兀室韦苏木室韦村|CN-P-000695|pending|covered_variant|high|乡村旅游名录含蒙兀室韦苏木室韦村
 A057|阿尔山|呼伦贝尔|兴安盟阿尔山-柴河旅游景区|CN-P-000040|covered|cross_city|high|来源确认景区属兴安盟，不在呼伦贝尔
@@ -338,3 +333,14 @@ A337|朱家角古镇|上海|||pending|unmatched|low|当前文旅部名录无同�
 A338|上海科技馆|上海|上海科技馆|CN-P-000070|covered|covered_exact|high|MCT 5A名录全称一致
 A339|田子坊|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
 A340|上海自然博物馆|上海|||pending|unmatched|low|当前文旅部名录无同名或可证明父级来源
+A591|贵州省博物馆|贵阳|贵州省博物馆||pending|unmatched|low|新增或替换后尚未登记全国总池映射；不计入覆盖分子
+A592|张家界土家风情园|张家界|张家界土家风情园||pending|unmatched|low|新增或替换后尚未登记全国总池映射；不计入覆盖分子
+A593|老君山|洛阳|老君山||pending|unmatched|low|新增或替换后尚未登记全国总池映射；不计入覆盖分子
+A594|中华巴洛克历史文化街区|哈尔滨|中华巴洛克历史文化街区||pending|unmatched|low|新增或替换后尚未登记全国总池映射；不计入覆盖分子
+A595|美人松公园|长白山|美人松公园||pending|unmatched|low|新增或替换后尚未登记全国总池映射；不计入覆盖分子
+A596|新疆维吾尔自治区博物馆|北疆（乌鲁木齐-喀纳斯）|新疆维吾尔自治区博物馆||pending|unmatched|low|新增或替换后尚未登记全国总池映射；不计入覆盖分子
+A621|呼伦湖|呼伦贝尔|呼伦湖||pending|unmatched|low|替换/新增后尚未登记全国总池映射；不计入覆盖分子
+A641|翡翠谷景区|黄山|翡翠谷景区||pending|unmatched|low|替换/新增后尚未登记全国总池映射；不计入覆盖分子
+A642|徽州古城|黄山|徽州古城||pending|unmatched|low|替换/新增后尚未登记全国总池映射；不计入覆盖分子
+A643|黄山齐云山|黄山|黄山齐云山||pending|unmatched|low|替换/新增后尚未登记全国总池映射；不计入覆盖分子
+A644|黄山九龙瀑|黄山|黄山九龙瀑||pending|unmatched|low|替换/新增后尚未登记全国总池映射；不计入覆盖分子
